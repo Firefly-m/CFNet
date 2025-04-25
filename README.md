@@ -3,23 +3,44 @@
 Collaborative camouflaged object detection (CoCOD) aims at discovering the camouflaged objects in a group of relevant images.  Mining the camouflaged consistency relations across images is essential for locating collaborative camouflaged objects. The current CoCOD methods do not pay enough attention to the inclusion of information unrelated to co-significant objects in the common representation. Therefore, we propose a foreground-guided Consensus Awareness Network (FCNet) for collaborative camouflaged object detection.
 
 <img src="./pics/FCNet_output.png">
+
 <div align=center>
 <img src="./pics/FCNet_all_modules.png" width="400px">
 </div>
 
-## Training/Testing
+
+## 1. Training/Testing
 
 The training and testing experiments are conducted using PyTorch with a single NVIDIA GeForce RTX 3080 GPU of 24 GB Memory.
-Configuring your environment (Prerequisites):
 
-Creating a virtual environment in terminal: conda create -n BGNet python=3.6.
+1. Configuring your environment (Prerequisites):
 
-Installing necessary packages: pip install -r requirements.txt.
+- Creating a virtual environment in terminal: `conda create -n FCNet python=3.6`.
+- Installing necessary packages: `pip install -r requirements.txt`.
 
-## Datasets
+2. Downloading necessary data:
+
+- downloading testing dataset and move it into `./Dataset/`, which can be found in this [download link (Google Drive)](https://drive.google.com/file/d/1wyLfm0QhpOsgM5NoNcGCbgXnzQzBAJiX/view).
+
+- downloading PvTv2 weights and move it into `./pth/backbone/pvt_v2_b2.pth`[download link (Google Drive)](https://drive.google.com/file/d/15D_GL4wY2oNzLvovCHg6aATVFWTezgtw/view?usp=sharing).
+
+3. Training and Testing Configuration:
+
+- All the parameters are saved in the `config.py` file and you can change them as needed, like `--pth/train_save` and `--pth/train_path` in `config.py`.
+
+4. Training:
+
+- After you set all the configuration in `config.py`, just run `train.py` to generate the weights of the model.
+
+5. Testing:
+
+- After you download all the pre-trained model and testing dataset, just run `test.py` to generate the final prediction map.
+
+## 2. Datasets
 
 Your dataset of test must conform to the following format:
 
+```markdown
 -- Dataset
   | -- Train
   |    | -- CoCOD
@@ -51,6 +72,8 @@ Your dataset of test must conform to the following format:
   |    |    |    | -- | picture2.png
   
   ...
+
+```
 
 ## Contact
 
