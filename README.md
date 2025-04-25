@@ -7,7 +7,7 @@ Collaborative camouflaged object detection (CoCOD) aims at discovering the camou
 <img src="./pics/FCNet_all_modules.png" width="400px">
 </div>
 
-##Training/Testing
+## Training/Testing
 
 The training and testing experiments are conducted using PyTorch with a single NVIDIA GeForce RTX 3080 GPU of 24 GB Memory.
 Configuring your environment (Prerequisites):
@@ -16,9 +16,10 @@ Creating a virtual environment in terminal: conda create -n BGNet python=3.6.
 
 Installing necessary packages: pip install -r requirements.txt.
 
-##Datasets
+## Datasets
 
 Your dataset of test must conform to the following format:
+
 -- Dataset
   | -- Train
   |    | -- CoCOD
