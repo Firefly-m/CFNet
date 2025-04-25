@@ -6,11 +6,53 @@ Collaborative camouflaged object detection (CoCOD) aims at discovering the camou
 <div align=center>
 <img src="./pics/FCNet_all_modules.png" width="400px">
 </div>
-# Training/Testing
+
+##Training/Testing
+
 The training and testing experiments are conducted using PyTorch with a single NVIDIA GeForce RTX 3080 GPU of 24 GB Memory.
 Configuring your environment (Prerequisites):
 
 Creating a virtual environment in terminal: conda create -n BGNet python=3.6.
 
 Installing necessary packages: pip install -r requirements.txt.
+
+##Datasets
+
+Your dataset of test must conform to the following format:
+-- Dataset
+  | -- Train
+  |    | -- CoCOD
+  |    | -- | img
+  |    | -- | gt
+
+  | -- Test
+  |    | -- NC4K
+  |    | -- | img
+  |    |    | -- | class1
+  |    |    | -- | class2
+  |    | -- | gt
+  |    |    | -- | class1
+  |    |    | -- | class2
+  
+  |    | -- CHAMELEON
+  |    | -- | img
+  |    |    | -- | class1
+  |    |    | -- | class2
+  |    |    |    | -- | picture1.png
+  |    |    |    | -- | picture2.png
+  
+  ...
+    
+  |    | -- | gt
+  |    |    | -- | class1
+  |    |    | -- | class2
+  |    |    |    | -- | picture1.png
+  |    |    |    | -- | picture2.png
+  
+  ...
+
+## Contact
+
+Feel free to send e-mails to me (modisen2022@163.com).
+
 We will release details about the code as soon as possible.
