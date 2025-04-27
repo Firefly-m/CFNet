@@ -1,4 +1,4 @@
-# Consensus-Aware Foreground Refinement Network for Collaborative Camouflaged Object Detection
+# Consensus-aware Foreground Refinement Network for Collaborative Camouflaged Object Detection (CFNet)
 
 Collaborative camouflaged object detection (CoCOD) aims at discovering the camouflaged objects in a group of relevant images.  Mining the camouflaged consistency relations across images is essential for locating collaborative camouflaged objects. The current CoCOD methods do not pay enough attention to the inclusion of information unrelated to co-significant objects in the common representation. Therefore, we propose a Consensus-Aware Foreground Refinement Network (CFNet) for collaborative camouflaged object detection.
 
