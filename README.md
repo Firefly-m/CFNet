@@ -1,5 +1,10 @@
 # Consensus-aware Foreground Refinement Network for Collaborative Camouflaged Object Detection (CFNet)
 
+</a></h2>
+Hongbo Bi, [Disen Mo](https://firefly-m.github.io/Moodysson.github.io/), Shiyuan Li, Cong Zhang*<br>
+
+This is a code repository for the papar "Consensus-aware Foreground Refinement Network for Collaborative Camouflaged Object Detection" that submitted in *The Visual Computer* 2025.
+
 Collaborative camouflaged object detection (CoCOD) aims at discovering the camouflaged objects in a group of relevant images.  Mining the camouflaged consistency relations across images is essential for locating collaborative camouflaged objects. The current CoCOD methods do not pay enough attention to the inclusion of information unrelated to co-significant objects in the common representation. Therefore, we propose a Consensus-Aware Foreground Refinement Network (CFNet) for collaborative camouflaged object detection.
 
 <img src="./pics/FCNet_output.png">
@@ -9,13 +14,20 @@ Collaborative camouflaged object detection (CoCOD) aims at discovering the camou
 </div>
 
 
+
 ## 1. Training/Testing
 
 The training and testing experiments are conducted using PyTorch with a single NVIDIA GeForce RTX 3080 GPU of 24 GB Memory.
 
 1. Configuring your environment (Prerequisites):
 
-- Creating a virtual environment in terminal: `conda create -n FCNet python=3.6`.
+```
+Python==3.6.x
+opencv-python==4.5.3.56
+torch==1.12.0
+```
+
+- Creating a virtual environment in terminal: `conda create -n CFNet python=3.6`.
 - Installing necessary packages: `pip install -r requirements.txt`.
 
 2. Downloading necessary data:
@@ -75,8 +87,12 @@ Your dataset of test must conform to the following format:
 
 ```
 
+## Citation
+
+If you find our work to be beneficial to your research, please ensure to cite it in the journal once it has been accepted. We will promptly update and provide the appropriate citation format.
+
 ## Contact
 
-Feel free to send e-mails to me (modisen2022@163.com).
+If you have any questions, feel free to contact me via `modisen2022@163.com`.
 
 We will release details about the code as soon as possible.
