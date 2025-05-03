@@ -5,9 +5,9 @@ Hongbo Bi, [Disen Mo](https://firefly-m.github.io/Moodysson.github.io/), Shiyuan
 
 This is a code repository for the papar "Consensus-aware Foreground Refinement Network for Collaborative Camouflaged Object Detection" that submitted in *The Visual Computer* 2025.
 
-Collaborative camouflaged object detection (CoCOD) aims at discovering the camouflaged objects in a group of relevant images.  Mining the camouflaged consistency relations across images is essential for locating collaborative camouflaged objects. The current CoCOD methods do not pay enough attention to the inclusion of information unrelated to co-significant objects in the common representation. Therefore, we propose a Consensus-Aware Foreground Refinement Network (CFNet) for collaborative camouflaged object detection.
-
 <img src="./pics/FCNet_output.png">
+
+Collaborative camouflaged object detection (CoCOD) aims at discovering the camouflaged objects in a group of relevant images.  Mining the camouflaged consistency relations across images is essential for locating collaborative camouflaged objects. The current CoCOD methods do not pay enough attention to the inclusion of information unrelated to co-significant objects in the common representation. Therefore, we propose a Consensus-Aware Foreground Refinement Network (CFNet) for collaborative camouflaged object detection.
 
 <div align=center>
 <img src="./pics/FCNet_all_modules.png" width="400px">
